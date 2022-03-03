@@ -2,6 +2,7 @@ import "./collection.scss";
 import CollectionItem from "../../components/collection-item/collection-item";
 import { connect } from "react-redux";
 import { selectCollection } from "../../redux/shop/shop.selectors";
+import { firestore } from "../../firebase/firebase.utils";
 
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
